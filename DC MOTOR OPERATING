@@ -1,0 +1,39 @@
+// C++ code
+int Input1=8;
+int Input2=9;
+int Input4=11;
+int Input3=10;
+void setup()
+{
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(Input4, OUTPUT);
+  pinMode(Input3, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(8, HIGH);
+  digitalWrite(9, LOW);
+  digitalWrite(Input4, HIGH);
+  digitalWrite(Input3, LOW);
+  delay(2000);
+  
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(Input4, LOW);
+  digitalWrite(Input3, LOW);
+  delay(1000);
+  
+  digitalWrite(8, LOW);
+  digitalWrite(9, HIGH);
+  digitalWrite(Input4, LOW);
+  digitalWrite(Input3,HIGH);
+  delay(2000);
+  
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(Input4, LOW);
+  digitalWrite(Input3, LOW);
+  delay(1000);
+}
